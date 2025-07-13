@@ -1,19 +1,28 @@
 # factory-reset-switch
 
 ```
-remove flash:/private-config.text
+delete flash:/private-config.text
 ```
 ```
-remove flash:/config.text
-```
-```
-write erase
+delete flash:/config.text
 ```
 ```
 delete flash:vlan.dat
 ```
 ```
-copy startup-config running-config
+write erase
+```
+```
+copy run start
+```
+```
+copy start run
+```
+```
+write mem
+```
+```
+write term
 ```
 ```
 reload
